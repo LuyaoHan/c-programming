@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/print-hex.dir/print-hex.c.o -o print-hex 
