@@ -1,3 +1,14 @@
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/rebuild_cache.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-memset.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-memcpy.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-despace.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/pointer-voidpointers.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-format.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-strcat.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/io-write-file.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/parsing.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/print-hex.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/print-binary.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-get-until.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/edit_cache.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-strcpy.dir

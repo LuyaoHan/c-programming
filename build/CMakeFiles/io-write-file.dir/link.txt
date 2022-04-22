@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/io-write-file.dir/io-write-file.c.o -o io-write-file 

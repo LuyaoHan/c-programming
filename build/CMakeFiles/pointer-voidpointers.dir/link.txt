@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/pointer-voidpointers.dir/pointer-voidpointers.c.o -o pointer-voidpointers 

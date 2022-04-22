@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/string-get-until.dir/string-get-until.c.o -o string-get-until 

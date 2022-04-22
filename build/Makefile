@@ -117,6 +117,110 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named string-memset
+
+# Build rule for target.
+string-memset: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-memset
+.PHONY : string-memset
+
+# fast build rule for target.
+string-memset/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/build
+.PHONY : string-memset/fast
+
+#=============================================================================
+# Target rules for targets named string-memcpy
+
+# Build rule for target.
+string-memcpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-memcpy
+.PHONY : string-memcpy
+
+# fast build rule for target.
+string-memcpy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/build
+.PHONY : string-memcpy/fast
+
+#=============================================================================
+# Target rules for targets named string-despace
+
+# Build rule for target.
+string-despace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-despace
+.PHONY : string-despace
+
+# fast build rule for target.
+string-despace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/build
+.PHONY : string-despace/fast
+
+#=============================================================================
+# Target rules for targets named pointer-voidpointers
+
+# Build rule for target.
+pointer-voidpointers: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pointer-voidpointers
+.PHONY : pointer-voidpointers
+
+# fast build rule for target.
+pointer-voidpointers/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/build
+.PHONY : pointer-voidpointers/fast
+
+#=============================================================================
+# Target rules for targets named string-format
+
+# Build rule for target.
+string-format: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-format
+.PHONY : string-format
+
+# fast build rule for target.
+string-format/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/build
+.PHONY : string-format/fast
+
+#=============================================================================
+# Target rules for targets named string-strcat
+
+# Build rule for target.
+string-strcat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-strcat
+.PHONY : string-strcat
+
+# fast build rule for target.
+string-strcat/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/build
+.PHONY : string-strcat/fast
+
+#=============================================================================
+# Target rules for targets named io-write-file
+
+# Build rule for target.
+io-write-file: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io-write-file
+.PHONY : io-write-file
+
+# fast build rule for target.
+io-write-file/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/build
+.PHONY : io-write-file/fast
+
+#=============================================================================
+# Target rules for targets named parsing
+
+# Build rule for target.
+parsing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parsing
+.PHONY : parsing
+
+# fast build rule for target.
+parsing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/build
+.PHONY : parsing/fast
+
+#=============================================================================
 # Target rules for targets named print-hex
 
 # Build rule for target.
@@ -128,6 +232,141 @@ print-hex: cmake_check_build_system
 print-hex/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-hex.dir/build.make CMakeFiles/print-hex.dir/build
 .PHONY : print-hex/fast
+
+#=============================================================================
+# Target rules for targets named print-binary
+
+# Build rule for target.
+print-binary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 print-binary
+.PHONY : print-binary
+
+# fast build rule for target.
+print-binary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/build
+.PHONY : print-binary/fast
+
+#=============================================================================
+# Target rules for targets named string-get-until
+
+# Build rule for target.
+string-get-until: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-get-until
+.PHONY : string-get-until
+
+# fast build rule for target.
+string-get-until/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/build
+.PHONY : string-get-until/fast
+
+#=============================================================================
+# Target rules for targets named string-strcpy
+
+# Build rule for target.
+string-strcpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-strcpy
+.PHONY : string-strcpy
+
+# fast build rule for target.
+string-strcpy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/build
+.PHONY : string-strcpy/fast
+
+io-write-file.o: io-write-file.c.o
+.PHONY : io-write-file.o
+
+# target to build an object file
+io-write-file.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.o
+.PHONY : io-write-file.c.o
+
+io-write-file.i: io-write-file.c.i
+.PHONY : io-write-file.i
+
+# target to preprocess a source file
+io-write-file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.i
+.PHONY : io-write-file.c.i
+
+io-write-file.s: io-write-file.c.s
+.PHONY : io-write-file.s
+
+# target to generate assembly for a file
+io-write-file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.s
+.PHONY : io-write-file.c.s
+
+parsing.o: parsing.c.o
+.PHONY : parsing.o
+
+# target to build an object file
+parsing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/parsing.c.o
+.PHONY : parsing.c.o
+
+parsing.i: parsing.c.i
+.PHONY : parsing.i
+
+# target to preprocess a source file
+parsing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/parsing.c.i
+.PHONY : parsing.c.i
+
+parsing.s: parsing.c.s
+.PHONY : parsing.s
+
+# target to generate assembly for a file
+parsing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/parsing.c.s
+.PHONY : parsing.c.s
+
+pointer-voidpointers.o: pointer-voidpointers.c.o
+.PHONY : pointer-voidpointers.o
+
+# target to build an object file
+pointer-voidpointers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/pointer-voidpointers.c.o
+.PHONY : pointer-voidpointers.c.o
+
+pointer-voidpointers.i: pointer-voidpointers.c.i
+.PHONY : pointer-voidpointers.i
+
+# target to preprocess a source file
+pointer-voidpointers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/pointer-voidpointers.c.i
+.PHONY : pointer-voidpointers.c.i
+
+pointer-voidpointers.s: pointer-voidpointers.c.s
+.PHONY : pointer-voidpointers.s
+
+# target to generate assembly for a file
+pointer-voidpointers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/pointer-voidpointers.c.s
+.PHONY : pointer-voidpointers.c.s
+
+print-binary.o: print-binary.c.o
+.PHONY : print-binary.o
+
+# target to build an object file
+print-binary.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/print-binary.c.o
+.PHONY : print-binary.c.o
+
+print-binary.i: print-binary.c.i
+.PHONY : print-binary.i
+
+# target to preprocess a source file
+print-binary.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/print-binary.c.i
+.PHONY : print-binary.c.i
+
+print-binary.s: print-binary.c.s
+.PHONY : print-binary.s
+
+# target to generate assembly for a file
+print-binary.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/print-binary.c.s
+.PHONY : print-binary.c.s
 
 print-hex.o: print-hex.c.o
 .PHONY : print-hex.o
@@ -153,6 +392,174 @@ print-hex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-hex.dir/build.make CMakeFiles/print-hex.dir/print-hex.c.s
 .PHONY : print-hex.c.s
 
+string-despace.o: string-despace.c.o
+.PHONY : string-despace.o
+
+# target to build an object file
+string-despace.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/string-despace.c.o
+.PHONY : string-despace.c.o
+
+string-despace.i: string-despace.c.i
+.PHONY : string-despace.i
+
+# target to preprocess a source file
+string-despace.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/string-despace.c.i
+.PHONY : string-despace.c.i
+
+string-despace.s: string-despace.c.s
+.PHONY : string-despace.s
+
+# target to generate assembly for a file
+string-despace.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/string-despace.c.s
+.PHONY : string-despace.c.s
+
+string-format.o: string-format.c.o
+.PHONY : string-format.o
+
+# target to build an object file
+string-format.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/string-format.c.o
+.PHONY : string-format.c.o
+
+string-format.i: string-format.c.i
+.PHONY : string-format.i
+
+# target to preprocess a source file
+string-format.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/string-format.c.i
+.PHONY : string-format.c.i
+
+string-format.s: string-format.c.s
+.PHONY : string-format.s
+
+# target to generate assembly for a file
+string-format.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/string-format.c.s
+.PHONY : string-format.c.s
+
+string-get-until.o: string-get-until.c.o
+.PHONY : string-get-until.o
+
+# target to build an object file
+string-get-until.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/string-get-until.c.o
+.PHONY : string-get-until.c.o
+
+string-get-until.i: string-get-until.c.i
+.PHONY : string-get-until.i
+
+# target to preprocess a source file
+string-get-until.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/string-get-until.c.i
+.PHONY : string-get-until.c.i
+
+string-get-until.s: string-get-until.c.s
+.PHONY : string-get-until.s
+
+# target to generate assembly for a file
+string-get-until.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/string-get-until.c.s
+.PHONY : string-get-until.c.s
+
+string-memcpy.o: string-memcpy.c.o
+.PHONY : string-memcpy.o
+
+# target to build an object file
+string-memcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/string-memcpy.c.o
+.PHONY : string-memcpy.c.o
+
+string-memcpy.i: string-memcpy.c.i
+.PHONY : string-memcpy.i
+
+# target to preprocess a source file
+string-memcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/string-memcpy.c.i
+.PHONY : string-memcpy.c.i
+
+string-memcpy.s: string-memcpy.c.s
+.PHONY : string-memcpy.s
+
+# target to generate assembly for a file
+string-memcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/string-memcpy.c.s
+.PHONY : string-memcpy.c.s
+
+string-memset.o: string-memset.c.o
+.PHONY : string-memset.o
+
+# target to build an object file
+string-memset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/string-memset.c.o
+.PHONY : string-memset.c.o
+
+string-memset.i: string-memset.c.i
+.PHONY : string-memset.i
+
+# target to preprocess a source file
+string-memset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/string-memset.c.i
+.PHONY : string-memset.c.i
+
+string-memset.s: string-memset.c.s
+.PHONY : string-memset.s
+
+# target to generate assembly for a file
+string-memset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/string-memset.c.s
+.PHONY : string-memset.c.s
+
+string-strcat.o: string-strcat.c.o
+.PHONY : string-strcat.o
+
+# target to build an object file
+string-strcat.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/string-strcat.c.o
+.PHONY : string-strcat.c.o
+
+string-strcat.i: string-strcat.c.i
+.PHONY : string-strcat.i
+
+# target to preprocess a source file
+string-strcat.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/string-strcat.c.i
+.PHONY : string-strcat.c.i
+
+string-strcat.s: string-strcat.c.s
+.PHONY : string-strcat.s
+
+# target to generate assembly for a file
+string-strcat.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/string-strcat.c.s
+.PHONY : string-strcat.c.s
+
+string-strcpy.o: string-strcpy.c.o
+.PHONY : string-strcpy.o
+
+# target to build an object file
+string-strcpy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/string-strcpy.c.o
+.PHONY : string-strcpy.c.o
+
+string-strcpy.i: string-strcpy.c.i
+.PHONY : string-strcpy.i
+
+# target to preprocess a source file
+string-strcpy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/string-strcpy.c.i
+.PHONY : string-strcpy.c.i
+
+string-strcpy.s: string-strcpy.c.s
+.PHONY : string-strcpy.s
+
+# target to generate assembly for a file
+string-strcpy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/string-strcpy.c.s
+.PHONY : string-strcpy.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +568,54 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... io-write-file"
+	@echo "... parsing"
+	@echo "... pointer-voidpointers"
+	@echo "... print-binary"
 	@echo "... print-hex"
+	@echo "... string-despace"
+	@echo "... string-format"
+	@echo "... string-get-until"
+	@echo "... string-memcpy"
+	@echo "... string-memset"
+	@echo "... string-strcat"
+	@echo "... string-strcpy"
+	@echo "... io-write-file.o"
+	@echo "... io-write-file.i"
+	@echo "... io-write-file.s"
+	@echo "... parsing.o"
+	@echo "... parsing.i"
+	@echo "... parsing.s"
+	@echo "... pointer-voidpointers.o"
+	@echo "... pointer-voidpointers.i"
+	@echo "... pointer-voidpointers.s"
+	@echo "... print-binary.o"
+	@echo "... print-binary.i"
+	@echo "... print-binary.s"
 	@echo "... print-hex.o"
 	@echo "... print-hex.i"
 	@echo "... print-hex.s"
+	@echo "... string-despace.o"
+	@echo "... string-despace.i"
+	@echo "... string-despace.s"
+	@echo "... string-format.o"
+	@echo "... string-format.i"
+	@echo "... string-format.s"
+	@echo "... string-get-until.o"
+	@echo "... string-get-until.i"
+	@echo "... string-get-until.s"
+	@echo "... string-memcpy.o"
+	@echo "... string-memcpy.i"
+	@echo "... string-memcpy.s"
+	@echo "... string-memset.o"
+	@echo "... string-memset.i"
+	@echo "... string-memset.s"
+	@echo "... string-strcat.o"
+	@echo "... string-strcat.i"
+	@echo "... string-strcat.s"
+	@echo "... string-strcpy.o"
+	@echo "... string-strcpy.i"
+	@echo "... string-strcpy.s"
 .PHONY : help
 
 

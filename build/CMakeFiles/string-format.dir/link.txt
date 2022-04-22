@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/string-format.dir/string-format.c.o -o string-format 

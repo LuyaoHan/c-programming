@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/string-strcat.dir/string-strcat.c.o -o string-strcat 

@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/string-strcpy.dir/string-strcpy.c.o -o string-strcpy 
