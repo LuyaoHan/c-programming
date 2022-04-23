@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/print-boolean.dir/print-boolean.c.o -o print-boolean 

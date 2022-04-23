@@ -195,6 +195,19 @@ string-strcat/fast:
 .PHONY : string-strcat/fast
 
 #=============================================================================
+# Target rules for targets named print-boolean
+
+# Build rule for target.
+print-boolean: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 print-boolean
+.PHONY : print-boolean
+
+# fast build rule for target.
+print-boolean/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/build
+.PHONY : print-boolean/fast
+
+#=============================================================================
 # Target rules for targets named io-write-file
 
 # Build rule for target.
@@ -405,6 +418,30 @@ print-binary.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/print-binary.c.s
 .PHONY : print-binary.c.s
 
+print-boolean.o: print-boolean.c.o
+.PHONY : print-boolean.o
+
+# target to build an object file
+print-boolean.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/print-boolean.c.o
+.PHONY : print-boolean.c.o
+
+print-boolean.i: print-boolean.c.i
+.PHONY : print-boolean.i
+
+# target to preprocess a source file
+print-boolean.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/print-boolean.c.i
+.PHONY : print-boolean.c.i
+
+print-boolean.s: print-boolean.c.s
+.PHONY : print-boolean.s
+
+# target to generate assembly for a file
+print-boolean.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/print-boolean.c.s
+.PHONY : print-boolean.c.s
+
 print-hex.o: print-hex.c.o
 .PHONY : print-hex.o
 
@@ -610,6 +647,7 @@ help:
 	@echo "... pointer-voidpointers"
 	@echo "... print-array"
 	@echo "... print-binary"
+	@echo "... print-boolean"
 	@echo "... print-hex"
 	@echo "... string-despace"
 	@echo "... string-format"
@@ -633,6 +671,9 @@ help:
 	@echo "... print-binary.o"
 	@echo "... print-binary.i"
 	@echo "... print-binary.s"
+	@echo "... print-boolean.o"
+	@echo "... print-boolean.i"
+	@echo "... print-boolean.s"
 	@echo "... print-hex.o"
 	@echo "... print-hex.i"
 	@echo "... print-hex.s"
