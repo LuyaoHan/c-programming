@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/print-array.dir/print-array.c.o -o print-array 

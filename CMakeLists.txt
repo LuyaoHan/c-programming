@@ -15,4 +15,5 @@ add_executable(string-despace string-despace.c)
 add_executable(string-get-until string-get-until.c)
 add_executable(string-strcpy string-strcpy.c)
 add_executable(string-memset string-memset.c)
+add_executable(print-array print-array.c)
 

@@ -7,6 +7,7 @@
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-strcat.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/io-write-file.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/parsing.dir
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/print-array.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/print-hex.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/print-binary.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-get-until.dir

@@ -221,6 +221,19 @@ parsing/fast:
 .PHONY : parsing/fast
 
 #=============================================================================
+# Target rules for targets named print-array
+
+# Build rule for target.
+print-array: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 print-array
+.PHONY : print-array
+
+# fast build rule for target.
+print-array/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/build
+.PHONY : print-array/fast
+
+#=============================================================================
 # Target rules for targets named print-hex
 
 # Build rule for target.
@@ -343,6 +356,30 @@ pointer-voidpointers.s: pointer-voidpointers.c.s
 pointer-voidpointers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/pointer-voidpointers.c.s
 .PHONY : pointer-voidpointers.c.s
+
+print-array.o: print-array.c.o
+.PHONY : print-array.o
+
+# target to build an object file
+print-array.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/print-array.c.o
+.PHONY : print-array.c.o
+
+print-array.i: print-array.c.i
+.PHONY : print-array.i
+
+# target to preprocess a source file
+print-array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/print-array.c.i
+.PHONY : print-array.c.i
+
+print-array.s: print-array.c.s
+.PHONY : print-array.s
+
+# target to generate assembly for a file
+print-array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/print-array.c.s
+.PHONY : print-array.c.s
 
 print-binary.o: print-binary.c.o
 .PHONY : print-binary.o
@@ -571,6 +608,7 @@ help:
 	@echo "... io-write-file"
 	@echo "... parsing"
 	@echo "... pointer-voidpointers"
+	@echo "... print-array"
 	@echo "... print-binary"
 	@echo "... print-hex"
 	@echo "... string-despace"
@@ -589,6 +627,9 @@ help:
 	@echo "... pointer-voidpointers.o"
 	@echo "... pointer-voidpointers.i"
 	@echo "... pointer-voidpointers.s"
+	@echo "... print-array.o"
+	@echo "... print-array.i"
+	@echo "... print-array.s"
 	@echo "... print-binary.o"
 	@echo "... print-binary.i"
 	@echo "... print-binary.s"
