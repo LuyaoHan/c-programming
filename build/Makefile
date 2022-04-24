@@ -130,6 +130,19 @@ string-memset/fast:
 .PHONY : string-memset/fast
 
 #=============================================================================
+# Target rules for targets named countdown-timer
+
+# Build rule for target.
+countdown-timer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 countdown-timer
+.PHONY : countdown-timer
+
+# fast build rule for target.
+countdown-timer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/build
+.PHONY : countdown-timer/fast
+
+#=============================================================================
 # Target rules for targets named string-memcpy
 
 # Build rule for target.
@@ -297,6 +310,30 @@ string-strcpy: cmake_check_build_system
 string-strcpy/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/build
 .PHONY : string-strcpy/fast
+
+countdown-timer.o: countdown-timer.c.o
+.PHONY : countdown-timer.o
+
+# target to build an object file
+countdown-timer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.o
+.PHONY : countdown-timer.c.o
+
+countdown-timer.i: countdown-timer.c.i
+.PHONY : countdown-timer.i
+
+# target to preprocess a source file
+countdown-timer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.i
+.PHONY : countdown-timer.c.i
+
+countdown-timer.s: countdown-timer.c.s
+.PHONY : countdown-timer.s
+
+# target to generate assembly for a file
+countdown-timer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.s
+.PHONY : countdown-timer.c.s
 
 io-write-file.o: io-write-file.c.o
 .PHONY : io-write-file.o
@@ -642,6 +679,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... countdown-timer"
 	@echo "... io-write-file"
 	@echo "... parsing"
 	@echo "... pointer-voidpointers"
@@ -656,6 +694,9 @@ help:
 	@echo "... string-memset"
 	@echo "... string-strcat"
 	@echo "... string-strcpy"
+	@echo "... countdown-timer.o"
+	@echo "... countdown-timer.i"
+	@echo "... countdown-timer.s"
 	@echo "... io-write-file.o"
 	@echo "... io-write-file.i"
 	@echo "... io-write-file.s"

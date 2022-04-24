@@ -17,4 +17,5 @@ add_executable(string-strcpy string-strcpy.c)
 add_executable(string-memset string-memset.c)
 add_executable(print-array print-array.c)
 add_executable(print-boolean print-boolean.c)
+add_executable(countdown-timer countdown-timer.c)
 

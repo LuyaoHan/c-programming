@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/countdown-timer.dir/countdown-timer.c.o -o countdown-timer 
