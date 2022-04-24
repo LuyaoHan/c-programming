@@ -32,7 +32,7 @@ int main()
 	printf("- A count down timer -\n");
 	/* The number of seconds to count down. */
 	unsigned int seconds;	
-	char read_input[100];
+	char read_input[256];
 
 	/* Prompt for input from user. */
 	printf("Enter number of seconds to count down: \n > ");
@@ -42,7 +42,7 @@ int main()
 
 	/* Start counting down. */
 	printf("- Counting Down... -\n");
-	while (seconds >= 0) {
+	while (seconds > 0) {
 		printf("- %d -\n", seconds);
 		--seconds;
 		SLEEP_1_SEC;
