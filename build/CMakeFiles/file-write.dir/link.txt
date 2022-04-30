@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/file-write.dir/file-write.c.o -o file-write 

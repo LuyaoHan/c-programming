@@ -3,7 +3,8 @@ project(c-programming)
 
 # add executables for compilation
 add_executable(print-hex print-hex.c)
-add_executable(io-write-file io-write-file.c)
+add_executable(file-write file-write.c)
+add_executable(file-read file-read.c)
 add_executable(pointer-voidpointers pointer-voidpointers.c)
 add_executable(print-hex print-hex.c)
 add_executable(string-format string-format.c)

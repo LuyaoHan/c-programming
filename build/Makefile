@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /home/luyaohan1001/Projects/c-programming/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -84,6 +74,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,43 +130,17 @@ string-memset/fast:
 .PHONY : string-memset/fast
 
 #=============================================================================
-# Target rules for targets named countdown-timer
+# Target rules for targets named string-strcpy
 
 # Build rule for target.
-countdown-timer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 countdown-timer
-.PHONY : countdown-timer
+string-strcpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-strcpy
+.PHONY : string-strcpy
 
 # fast build rule for target.
-countdown-timer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/build
-.PHONY : countdown-timer/fast
-
-#=============================================================================
-# Target rules for targets named string-memcpy
-
-# Build rule for target.
-string-memcpy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-memcpy
-.PHONY : string-memcpy
-
-# fast build rule for target.
-string-memcpy/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/build
-.PHONY : string-memcpy/fast
-
-#=============================================================================
-# Target rules for targets named string-despace
-
-# Build rule for target.
-string-despace: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-despace
-.PHONY : string-despace
-
-# fast build rule for target.
-string-despace/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/build
-.PHONY : string-despace/fast
+string-strcpy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/build
+.PHONY : string-strcpy/fast
 
 #=============================================================================
 # Target rules for targets named pointer-voidpointers
@@ -208,6 +182,19 @@ string-strcat/fast:
 .PHONY : string-strcat/fast
 
 #=============================================================================
+# Target rules for targets named file-read
+
+# Build rule for target.
+file-read: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file-read
+.PHONY : file-read
+
+# fast build rule for target.
+file-read/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/build
+.PHONY : file-read/fast
+
+#=============================================================================
 # Target rules for targets named print-boolean
 
 # Build rule for target.
@@ -221,19 +208,6 @@ print-boolean/fast:
 .PHONY : print-boolean/fast
 
 #=============================================================================
-# Target rules for targets named io-write-file
-
-# Build rule for target.
-io-write-file: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 io-write-file
-.PHONY : io-write-file
-
-# fast build rule for target.
-io-write-file/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/build
-.PHONY : io-write-file/fast
-
-#=============================================================================
 # Target rules for targets named parsing
 
 # Build rule for target.
@@ -245,6 +219,45 @@ parsing: cmake_check_build_system
 parsing/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/build
 .PHONY : parsing/fast
+
+#=============================================================================
+# Target rules for targets named countdown-timer
+
+# Build rule for target.
+countdown-timer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 countdown-timer
+.PHONY : countdown-timer
+
+# fast build rule for target.
+countdown-timer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/build
+.PHONY : countdown-timer/fast
+
+#=============================================================================
+# Target rules for targets named string-memcpy
+
+# Build rule for target.
+string-memcpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-memcpy
+.PHONY : string-memcpy
+
+# fast build rule for target.
+string-memcpy/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/build
+.PHONY : string-memcpy/fast
+
+#=============================================================================
+# Target rules for targets named string-despace
+
+# Build rule for target.
+string-despace: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-despace
+.PHONY : string-despace
+
+# fast build rule for target.
+string-despace/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/build
+.PHONY : string-despace/fast
 
 #=============================================================================
 # Target rules for targets named print-array
@@ -286,6 +299,19 @@ print-binary/fast:
 .PHONY : print-binary/fast
 
 #=============================================================================
+# Target rules for targets named file-write
+
+# Build rule for target.
+file-write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 file-write
+.PHONY : file-write
+
+# fast build rule for target.
+file-write/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/build
+.PHONY : file-write/fast
+
+#=============================================================================
 # Target rules for targets named string-get-until
 
 # Build rule for target.
@@ -297,19 +323,6 @@ string-get-until: cmake_check_build_system
 string-get-until/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/build
 .PHONY : string-get-until/fast
-
-#=============================================================================
-# Target rules for targets named string-strcpy
-
-# Build rule for target.
-string-strcpy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 string-strcpy
-.PHONY : string-strcpy
-
-# fast build rule for target.
-string-strcpy/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/build
-.PHONY : string-strcpy/fast
 
 countdown-timer.o: countdown-timer.c.o
 .PHONY : countdown-timer.o
@@ -335,29 +348,53 @@ countdown-timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.s
 .PHONY : countdown-timer.c.s
 
-io-write-file.o: io-write-file.c.o
-.PHONY : io-write-file.o
+file-read.o: file-read.c.o
+.PHONY : file-read.o
 
 # target to build an object file
-io-write-file.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.o
-.PHONY : io-write-file.c.o
+file-read.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/file-read.c.o
+.PHONY : file-read.c.o
 
-io-write-file.i: io-write-file.c.i
-.PHONY : io-write-file.i
+file-read.i: file-read.c.i
+.PHONY : file-read.i
 
 # target to preprocess a source file
-io-write-file.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.i
-.PHONY : io-write-file.c.i
+file-read.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/file-read.c.i
+.PHONY : file-read.c.i
 
-io-write-file.s: io-write-file.c.s
-.PHONY : io-write-file.s
+file-read.s: file-read.c.s
+.PHONY : file-read.s
 
 # target to generate assembly for a file
-io-write-file.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/io-write-file.dir/build.make CMakeFiles/io-write-file.dir/io-write-file.c.s
-.PHONY : io-write-file.c.s
+file-read.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/file-read.c.s
+.PHONY : file-read.c.s
+
+file-write.o: file-write.c.o
+.PHONY : file-write.o
+
+# target to build an object file
+file-write.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/file-write.c.o
+.PHONY : file-write.c.o
+
+file-write.i: file-write.c.i
+.PHONY : file-write.i
+
+# target to preprocess a source file
+file-write.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/file-write.c.i
+.PHONY : file-write.c.i
+
+file-write.s: file-write.c.s
+.PHONY : file-write.s
+
+# target to generate assembly for a file
+file-write.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/file-write.c.s
+.PHONY : file-write.c.s
 
 parsing.o: parsing.c.o
 .PHONY : parsing.o
@@ -680,7 +717,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... countdown-timer"
-	@echo "... io-write-file"
+	@echo "... file-read"
+	@echo "... file-write"
 	@echo "... parsing"
 	@echo "... pointer-voidpointers"
 	@echo "... print-array"
@@ -697,9 +735,12 @@ help:
 	@echo "... countdown-timer.o"
 	@echo "... countdown-timer.i"
 	@echo "... countdown-timer.s"
-	@echo "... io-write-file.o"
-	@echo "... io-write-file.i"
-	@echo "... io-write-file.s"
+	@echo "... file-read.o"
+	@echo "... file-read.i"
+	@echo "... file-read.s"
+	@echo "... file-write.o"
+	@echo "... file-write.i"
+	@echo "... file-write.s"
 	@echo "... parsing.o"
 	@echo "... parsing.i"
 	@echo "... parsing.s"
