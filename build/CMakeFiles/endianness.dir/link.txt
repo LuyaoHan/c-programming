@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/endianness.dir/endianness.c.o -o endianness 

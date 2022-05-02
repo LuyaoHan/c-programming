@@ -43,6 +43,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/endianness.dir/DependInfo.cmake"
   "CMakeFiles/string-memset.dir/DependInfo.cmake"
   "CMakeFiles/string-strcpy.dir/DependInfo.cmake"
   "CMakeFiles/pointer-voidpointers.dir/DependInfo.cmake"

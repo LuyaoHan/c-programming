@@ -1,3 +1,4 @@
+/home/luyaohan1001/Projects/c-programming/build/CMakeFiles/endianness.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-memset.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/edit_cache.dir
 /home/luyaohan1001/Projects/c-programming/build/CMakeFiles/string-strcpy.dir

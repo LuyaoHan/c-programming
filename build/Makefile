@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named endianness
+
+# Build rule for target.
+endianness: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 endianness
+.PHONY : endianness
+
+# fast build rule for target.
+endianness/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/build
+.PHONY : endianness/fast
+
+#=============================================================================
 # Target rules for targets named string-memset
 
 # Build rule for target.
@@ -347,6 +360,30 @@ countdown-timer.s: countdown-timer.c.s
 countdown-timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.s
 .PHONY : countdown-timer.c.s
+
+endianness.o: endianness.c.o
+.PHONY : endianness.o
+
+# target to build an object file
+endianness.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/endianness.c.o
+.PHONY : endianness.c.o
+
+endianness.i: endianness.c.i
+.PHONY : endianness.i
+
+# target to preprocess a source file
+endianness.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/endianness.c.i
+.PHONY : endianness.c.i
+
+endianness.s: endianness.c.s
+.PHONY : endianness.s
+
+# target to generate assembly for a file
+endianness.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/endianness.c.s
+.PHONY : endianness.c.s
 
 file-read.o: file-read.c.o
 .PHONY : file-read.o
@@ -717,6 +754,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... countdown-timer"
+	@echo "... endianness"
 	@echo "... file-read"
 	@echo "... file-write"
 	@echo "... parsing"
@@ -735,6 +773,9 @@ help:
 	@echo "... countdown-timer.o"
 	@echo "... countdown-timer.i"
 	@echo "... countdown-timer.s"
+	@echo "... endianness.o"
+	@echo "... endianness.i"
+	@echo "... endianness.s"
 	@echo "... file-read.o"
 	@echo "... file-read.i"
 	@echo "... file-read.s"
