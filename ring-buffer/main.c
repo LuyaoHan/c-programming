@@ -1,33 +1,34 @@
 #include "ring-buffer.h"
 
 
+
 void main() 
 {
-	ring_buffer_init();
-	ring_buffer_enqueue(1);
-	ring_buffer_enqueue(2);
-	ring_buffer_enqueue(3);
-	ring_buffer_enqueue(4);
-	ring_buffer_enqueue(5);
-	ring_buffer_enqueue(6);
-	ring_buffer_enqueue(7);
-	ring_buffer_enqueue(8);
-	ring_buffer_enqueue(9);
+	ring_buffer_init(&ring_buffer);
+	ring_buffer_enqueue(&ring_buffer, 1);
+	ring_buffer_enqueue(&ring_buffer, 2);
+	ring_buffer_enqueue(&ring_buffer, 3);
+	ring_buffer_enqueue(&ring_buffer, 4);
+	ring_buffer_enqueue(&ring_buffer, 5);
+	ring_buffer_enqueue(&ring_buffer, 6);
+	ring_buffer_enqueue(&ring_buffer, 7);
+	ring_buffer_enqueue(&ring_buffer, 8);
+	ring_buffer_enqueue(&ring_buffer, 9);
 
-	ring_buffer_printall();
+	ring_buffer_printall(&ring_buffer);
 
-	ring_buffer_dequeue();
-	ring_buffer_dequeue();
-	ring_buffer_dequeue();
-	ring_buffer_dequeue();
-	ring_buffer_dequeue();
-	ring_buffer_dequeue();
-	ring_buffer_printall();
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_dequeue(&ring_buffer);
+	ring_buffer_printall(&ring_buffer);
 
-	ring_buffer_enqueue(6);
-	ring_buffer_enqueue(7);
-	ring_buffer_enqueue(8);
-	ring_buffer_enqueue(9);
+	ring_buffer_enqueue(&ring_buffer, 6);
+	ring_buffer_enqueue(&ring_buffer, 7);
+	ring_buffer_enqueue(&ring_buffer, 8);
+	ring_buffer_enqueue(&ring_buffer, 9);
 	/*
 	ring_buffer_enqueue(10);
 	ring_buffer_enqueue(11);
@@ -41,7 +42,7 @@ void main()
 	ring_buffer_enqueue(19);
 	ring_buffer_enqueue(20);
 	*/
-	ring_buffer_printall();
+	ring_buffer_printall(&ring_buffer);
 
 }
 
