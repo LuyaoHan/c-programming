@@ -182,6 +182,19 @@ string-format/fast:
 .PHONY : string-format/fast
 
 #=============================================================================
+# Target rules for targets named int-to-char
+
+# Build rule for target.
+int-to-char: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 int-to-char
+.PHONY : int-to-char
+
+# fast build rule for target.
+int-to-char/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/build
+.PHONY : int-to-char/fast
+
+#=============================================================================
 # Target rules for targets named string-strcat
 
 # Build rule for target.
@@ -432,6 +445,30 @@ file-write.s: file-write.c.s
 file-write.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/file-write.c.s
 .PHONY : file-write.c.s
+
+int-to-char.o: int-to-char.c.o
+.PHONY : int-to-char.o
+
+# target to build an object file
+int-to-char.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/int-to-char.c.o
+.PHONY : int-to-char.c.o
+
+int-to-char.i: int-to-char.c.i
+.PHONY : int-to-char.i
+
+# target to preprocess a source file
+int-to-char.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/int-to-char.c.i
+.PHONY : int-to-char.c.i
+
+int-to-char.s: int-to-char.c.s
+.PHONY : int-to-char.s
+
+# target to generate assembly for a file
+int-to-char.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/int-to-char.c.s
+.PHONY : int-to-char.c.s
 
 parsing.o: parsing.c.o
 .PHONY : parsing.o
@@ -757,6 +794,7 @@ help:
 	@echo "... endianness"
 	@echo "... file-read"
 	@echo "... file-write"
+	@echo "... int-to-char"
 	@echo "... parsing"
 	@echo "... pointer-voidpointers"
 	@echo "... print-array"
@@ -782,6 +820,9 @@ help:
 	@echo "... file-write.o"
 	@echo "... file-write.i"
 	@echo "... file-write.s"
+	@echo "... int-to-char.o"
+	@echo "... int-to-char.i"
+	@echo "... int-to-char.s"
 	@echo "... parsing.o"
 	@echo "... parsing.i"
 	@echo "... parsing.s"

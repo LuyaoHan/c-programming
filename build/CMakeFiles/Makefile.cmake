@@ -48,6 +48,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/string-strcpy.dir/DependInfo.cmake"
   "CMakeFiles/pointer-voidpointers.dir/DependInfo.cmake"
   "CMakeFiles/string-format.dir/DependInfo.cmake"
+  "CMakeFiles/int-to-char.dir/DependInfo.cmake"
   "CMakeFiles/string-strcat.dir/DependInfo.cmake"
   "CMakeFiles/file-read.dir/DependInfo.cmake"
   "CMakeFiles/print-boolean.dir/DependInfo.cmake"

@@ -46,6 +46,7 @@ void ring_buffer_init(struct ring_buffer_t* rb)
 /**
 	*  @brief  Enqueue. Add elements to the front of the queue.
 	*  @note   Full-Condition: When the current size of items == Total Capacity.
+	*            Writing when buffer full will cause overflow.
 	*/
 void ring_buffer_enqueue(struct ring_buffer_t* rb, uint8_t data) 
 {
