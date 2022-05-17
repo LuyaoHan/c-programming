@@ -1,4 +1,4 @@
-# This repository includes many small examples for C-programming. 
+# This repository is a scratch space with many small examples for C-programming. 
 
 # To add new source to the project. 
 	
