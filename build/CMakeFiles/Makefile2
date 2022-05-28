@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/luyaohan1001/Projects/c-programming/build
 
 # The main recursive "all" target.
 all: CMakeFiles/endianness.dir/all
+all: CMakeFiles/decimal-count-digits.dir/all
 all: CMakeFiles/string-memset.dir/all
 all: CMakeFiles/string-strcpy.dir/all
 all: CMakeFiles/pointer-voidpointers.dir/all
@@ -89,6 +90,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/endianness.dir/clean
+clean: CMakeFiles/decimal-count-digits.dir/clean
 clean: CMakeFiles/string-memset.dir/clean
 clean: CMakeFiles/string-strcpy.dir/clean
 clean: CMakeFiles/pointer-voidpointers.dir/clean
@@ -115,7 +117,7 @@ clean: CMakeFiles/string-get-until.dir/clean
 CMakeFiles/endianness.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/endianness.dir/build.make CMakeFiles/endianness.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=3,4 "Built target endianness"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=5,6 "Built target endianness"
 .PHONY : CMakeFiles/endianness.dir/all
 
 # Build rule for subdir invocation for target.
@@ -135,13 +137,39 @@ CMakeFiles/endianness.dir/clean:
 .PHONY : CMakeFiles/endianness.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/decimal-count-digits.dir
+
+# All Build rule for target.
+CMakeFiles/decimal-count-digits.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=3,4 "Built target decimal-count-digits"
+.PHONY : CMakeFiles/decimal-count-digits.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/decimal-count-digits.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luyaohan1001/Projects/c-programming/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decimal-count-digits.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luyaohan1001/Projects/c-programming/build/CMakeFiles 0
+.PHONY : CMakeFiles/decimal-count-digits.dir/rule
+
+# Convenience name for target.
+decimal-count-digits: CMakeFiles/decimal-count-digits.dir/rule
+.PHONY : decimal-count-digits
+
+# clean rule for target.
+CMakeFiles/decimal-count-digits.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/clean
+.PHONY : CMakeFiles/decimal-count-digits.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/string-memset.dir
 
 # All Build rule for target.
 CMakeFiles/string-memset.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memset.dir/build.make CMakeFiles/string-memset.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=31,32 "Built target string-memset"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=33,34 "Built target string-memset"
 .PHONY : CMakeFiles/string-memset.dir/all
 
 # Build rule for subdir invocation for target.
@@ -167,7 +195,7 @@ CMakeFiles/string-memset.dir/clean:
 CMakeFiles/string-strcpy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcpy.dir/build.make CMakeFiles/string-strcpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=35,36 "Built target string-strcpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=37,38 "Built target string-strcpy"
 .PHONY : CMakeFiles/string-strcpy.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +221,7 @@ CMakeFiles/string-strcpy.dir/clean:
 CMakeFiles/pointer-voidpointers.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pointer-voidpointers.dir/build.make CMakeFiles/pointer-voidpointers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=13,14 "Built target pointer-voidpointers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=15,16 "Built target pointer-voidpointers"
 .PHONY : CMakeFiles/pointer-voidpointers.dir/all
 
 # Build rule for subdir invocation for target.
@@ -219,7 +247,7 @@ CMakeFiles/pointer-voidpointers.dir/clean:
 CMakeFiles/string-format.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-format.dir/build.make CMakeFiles/string-format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=25,26 "Built target string-format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=27,28 "Built target string-format"
 .PHONY : CMakeFiles/string-format.dir/all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +273,7 @@ CMakeFiles/string-format.dir/clean:
 CMakeFiles/int-to-char.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/int-to-char.dir/build.make CMakeFiles/int-to-char.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=9,10 "Built target int-to-char"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=11,12 "Built target int-to-char"
 .PHONY : CMakeFiles/int-to-char.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +299,7 @@ CMakeFiles/int-to-char.dir/clean:
 CMakeFiles/string-strcat.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-strcat.dir/build.make CMakeFiles/string-strcat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=33,34 "Built target string-strcat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=35,36 "Built target string-strcat"
 .PHONY : CMakeFiles/string-strcat.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +325,7 @@ CMakeFiles/string-strcat.dir/clean:
 CMakeFiles/file-read.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-read.dir/build.make CMakeFiles/file-read.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=5,6 "Built target file-read"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=7,8 "Built target file-read"
 .PHONY : CMakeFiles/file-read.dir/all
 
 # Build rule for subdir invocation for target.
@@ -323,7 +351,7 @@ CMakeFiles/file-read.dir/clean:
 CMakeFiles/print-boolean.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-boolean.dir/build.make CMakeFiles/print-boolean.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=19,20 "Built target print-boolean"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=21,22 "Built target print-boolean"
 .PHONY : CMakeFiles/print-boolean.dir/all
 
 # Build rule for subdir invocation for target.
@@ -349,7 +377,7 @@ CMakeFiles/print-boolean.dir/clean:
 CMakeFiles/parsing.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parsing.dir/build.make CMakeFiles/parsing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=11,12 "Built target parsing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=13,14 "Built target parsing"
 .PHONY : CMakeFiles/parsing.dir/all
 
 # Build rule for subdir invocation for target.
@@ -401,7 +429,7 @@ CMakeFiles/countdown-timer.dir/clean:
 CMakeFiles/string-memcpy.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-memcpy.dir/build.make CMakeFiles/string-memcpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=29,30 "Built target string-memcpy"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=31,32 "Built target string-memcpy"
 .PHONY : CMakeFiles/string-memcpy.dir/all
 
 # Build rule for subdir invocation for target.
@@ -427,7 +455,7 @@ CMakeFiles/string-memcpy.dir/clean:
 CMakeFiles/string-despace.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-despace.dir/build.make CMakeFiles/string-despace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=23,24 "Built target string-despace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=25,26 "Built target string-despace"
 .PHONY : CMakeFiles/string-despace.dir/all
 
 # Build rule for subdir invocation for target.
@@ -453,7 +481,7 @@ CMakeFiles/string-despace.dir/clean:
 CMakeFiles/print-array.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-array.dir/build.make CMakeFiles/print-array.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=15,16 "Built target print-array"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=17,18 "Built target print-array"
 .PHONY : CMakeFiles/print-array.dir/all
 
 # Build rule for subdir invocation for target.
@@ -479,7 +507,7 @@ CMakeFiles/print-array.dir/clean:
 CMakeFiles/print-hex.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-hex.dir/build.make CMakeFiles/print-hex.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-hex.dir/build.make CMakeFiles/print-hex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=21,22 "Built target print-hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=23,24 "Built target print-hex"
 .PHONY : CMakeFiles/print-hex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -505,7 +533,7 @@ CMakeFiles/print-hex.dir/clean:
 CMakeFiles/print-binary.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/print-binary.dir/build.make CMakeFiles/print-binary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=17,18 "Built target print-binary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=19,20 "Built target print-binary"
 .PHONY : CMakeFiles/print-binary.dir/all
 
 # Build rule for subdir invocation for target.
@@ -531,7 +559,7 @@ CMakeFiles/print-binary.dir/clean:
 CMakeFiles/file-write.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file-write.dir/build.make CMakeFiles/file-write.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=7,8 "Built target file-write"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=9,10 "Built target file-write"
 .PHONY : CMakeFiles/file-write.dir/all
 
 # Build rule for subdir invocation for target.
@@ -557,7 +585,7 @@ CMakeFiles/file-write.dir/clean:
 CMakeFiles/string-get-until.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/string-get-until.dir/build.make CMakeFiles/string-get-until.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=27,28 "Built target string-get-until"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/luyaohan1001/Projects/c-programming/build/CMakeFiles --progress-num=29,30 "Built target string-get-until"
 .PHONY : CMakeFiles/string-get-until.dir/all
 
 # Build rule for subdir invocation for target.

@@ -21,4 +21,5 @@ add_executable(print-boolean print-boolean.c)
 add_executable(countdown-timer countdown-timer.c)
 add_executable(endianness endianness.c)
 add_executable(int-to-char int-to-char.c)
+add_executable(decimal-count-digits decimal-count-digits.c)
 

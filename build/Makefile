@@ -130,6 +130,19 @@ endianness/fast:
 .PHONY : endianness/fast
 
 #=============================================================================
+# Target rules for targets named decimal-count-digits
+
+# Build rule for target.
+decimal-count-digits: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 decimal-count-digits
+.PHONY : decimal-count-digits
+
+# fast build rule for target.
+decimal-count-digits/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/build
+.PHONY : decimal-count-digits/fast
+
+#=============================================================================
 # Target rules for targets named string-memset
 
 # Build rule for target.
@@ -373,6 +386,30 @@ countdown-timer.s: countdown-timer.c.s
 countdown-timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/countdown-timer.dir/build.make CMakeFiles/countdown-timer.dir/countdown-timer.c.s
 .PHONY : countdown-timer.c.s
+
+decimal-count-digits.o: decimal-count-digits.c.o
+.PHONY : decimal-count-digits.o
+
+# target to build an object file
+decimal-count-digits.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/decimal-count-digits.c.o
+.PHONY : decimal-count-digits.c.o
+
+decimal-count-digits.i: decimal-count-digits.c.i
+.PHONY : decimal-count-digits.i
+
+# target to preprocess a source file
+decimal-count-digits.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/decimal-count-digits.c.i
+.PHONY : decimal-count-digits.c.i
+
+decimal-count-digits.s: decimal-count-digits.c.s
+.PHONY : decimal-count-digits.s
+
+# target to generate assembly for a file
+decimal-count-digits.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decimal-count-digits.dir/build.make CMakeFiles/decimal-count-digits.dir/decimal-count-digits.c.s
+.PHONY : decimal-count-digits.c.s
 
 endianness.o: endianness.c.o
 .PHONY : endianness.o
@@ -791,6 +828,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... countdown-timer"
+	@echo "... decimal-count-digits"
 	@echo "... endianness"
 	@echo "... file-read"
 	@echo "... file-write"
@@ -811,6 +849,9 @@ help:
 	@echo "... countdown-timer.o"
 	@echo "... countdown-timer.i"
 	@echo "... countdown-timer.s"
+	@echo "... decimal-count-digits.o"
+	@echo "... decimal-count-digits.i"
+	@echo "... decimal-count-digits.s"
 	@echo "... endianness.o"
 	@echo "... endianness.i"
 	@echo "... endianness.s"
