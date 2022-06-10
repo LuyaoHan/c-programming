@@ -7,4 +7,4 @@ main: linkedlist.o
 	gcc linkedlist.o main.c -o main -g
 
 clean:
-	rm -rf main 
+	rm -rf main *.o

@@ -8,13 +8,13 @@ Node_t* create(int dataToStore)
   return newNode;
 }
 
-void insert_at_head(Node_t* head, int dataToStore)
+Node_t* insert_at_head(Node_t* head, int dataToStore)
 {
   Node_t* newNode = malloc(sizeof(Node_t));
   newNode->data = dataToStore;
   newNode->next = head;
   head = newNode;
-  return;
+  return head;
 }
 
 void insert_at_tail(Node_t* head, int dataToStore)

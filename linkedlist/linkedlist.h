@@ -9,7 +9,7 @@ typedef struct Node{
 typedef struct {
   Node_t* head; 
   Node_t* (*create) (int);
-  void (*insert_at_head) (Node_t*, int);
+  Node_t* (*insert_at_head) (Node_t*, int);
   void (*insert_at_tail) (Node_t*, int);
   void (*delete_node) (Node_t*, int);
   void (*delete_head) (Node_t*);
@@ -21,7 +21,7 @@ typedef struct {
 
 
 Node_t* create(int dataToStore);
-void insert_at_head(Node_t* head, int dataToStore);
+Node_t* insert_at_head(Node_t* head, int dataToStore);
 void insert_at_tail(Node_t* head, int dataToStore);
 void delete_node(Node_t* head, int dataToDelete);
 void delete_head(Node_t* head);
