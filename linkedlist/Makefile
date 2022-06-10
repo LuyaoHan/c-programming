@@ -1,7 +1,10 @@
 all: main
 
-main:
-	gcc linkedlist.c main.c -o main -g
+linkedlist.o:
+	gcc -c linkedlist.c -o linkedlist.o -g
+
+main: linkedlist.o
+	gcc linkedlist.o main.c -o main -g
 
 clean:
 	rm -rf main 
