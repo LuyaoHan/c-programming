@@ -3,7 +3,7 @@ all: main
 linkedlist.o:
 	gcc -c linkedlist.c -o linkedlist.o -g
 
-main: linkedlist.o
+main: clean linkedlist.o
 	gcc linkedlist.o main.c -o main -g
 
 clean:

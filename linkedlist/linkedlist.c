@@ -1,13 +1,5 @@
 #include "linkedlist.h"
 
-Node_t* create(int dataToStore)
-{
-  Node_t* newNode = malloc(sizeof(Node_t));
-  newNode->data = dataToStore;
-  newNode->next = NULL;
-  return newNode;
-}
-
 Node_t* insert_at_head(Node_t* head, int dataToStore)
 {
   Node_t* newNode = malloc(sizeof(Node_t));
@@ -136,4 +128,28 @@ void print(Node_t* head)
   }
   printf("NULL\n");
   return;
+}
+
+
+
+void print_recursive(Node_t *curr)
+{
+  if (curr == NULL)
+  {
+    printf("NULL\n");
+    return;
+  }
+  printf("%d --> ", curr->data);
+  print_recursive(curr->next);
+}
+
+
+void print_reverse_recursive(Node_t *curr)
+{
+  if (curr == NULL)
+  {
+    return;
+  }
+  print_reverse_recursive(curr->next);
+  printf("%d --> ", curr->data);
 }
