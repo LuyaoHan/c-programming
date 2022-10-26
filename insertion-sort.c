@@ -21,11 +21,14 @@ void insertion_sort(int *arr, int length)
     {
         int key_to_insert = arr[i];
         int j = i-1;
-        while (j >= 0 && key_to_insert < arr[j])
+        while (key_to_insert < arr[j])
         {
             // move books to the right
             arr[j+1] = arr[j];
             --j;
+			if (j < 0) {
+				break;
+			}
         }
         // j+1 to compensate the last --j
         arr[j+1] = key_to_insert;
