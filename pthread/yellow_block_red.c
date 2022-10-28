@@ -26,7 +26,7 @@ void taskYellow(void *pvParameter) {
 void main() {
 	pthread_t threadRed, threadYellow;
 
-	sem_init(&sem1, NOT_SHARED_BETWEEN_PROCESSES, 0);
+	sem_init(&sem1, NOT_SHARED_BETWEEN_PROCESSES, 1);
 
 	pthread_create(&threadRed, NULL, (void *)taskRed, NULL);
 	pthread_create(&threadYellow, NULL, (void *)taskYellow, NULL);
