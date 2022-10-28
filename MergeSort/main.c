@@ -15,6 +15,7 @@ void printArray(int *arr, int size) {
     for (int idx = 0; idx < size; ++idx) {
         printf("%d ", arr[idx]);
     }
+    printf("\n");
 }
 
 
@@ -78,13 +79,8 @@ void mergeSort(int *arr, int arrSize) {
 void main() {
     int array[] = {7, 3, 1, 9, 21, -2};
     printf("Original array:\n");
-    for (int i = 0; i < 6; ++i) {
-        printf("%d ", array[i]);
-    }
+    printArray(array, sizeof(array)/sizeof(array[0]));
     mergeSort(array, 6);
     printf("\nSorted array:\n");
-    for (int i = 0; i < 6; ++i) {
-        printf("%d ", array[i]);
-    }
-    printf("\n");
+    printArray(array, sizeof(array)/sizeof(array[0]));
 }
